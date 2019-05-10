@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from "react-redux";
+import { fetchData } from "../actions/todoAction"
 
 class List extends Component {
+  componentDidMount(){}
   render() { 
     return ( 
     <div>
@@ -9,5 +12,8 @@ class List extends Component {
     );
   }
 }
- 
-export default List;
+
+export default connect(
+  null, 
+  { fetchData }
+)(List);
