@@ -5,6 +5,7 @@ import List from './components/List';
 import { Provider } from "react-redux";
 import store from './store'; // setelah store.js created
 
+
 function App() {
   return (
      <Provider store={store}> 
